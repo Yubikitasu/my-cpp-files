@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <vector>
 
 using namespace std;
 
@@ -12,7 +11,8 @@ int main() {
     float s2;
     cin >> n;
     for (int i = 0; i < n; i++) {
-        float a, b; cin >> a >> b; // a: gia tri dai dien, b: gia tri tan so;
+        float a, x, y, b; cin >> x >> y >> b;
+        a = (x+y)/2;
         m += b;
         v.push_back({a, b});
     }
@@ -22,7 +22,7 @@ int main() {
     }
     for (int k = 0; k < n; k++) {
         pair<float, float> x = v[k];
-        s2 += (x.second * ((x.first - xtb) * (x.first - xtb)) * (1/m));
+        s2 += (x.second * pow((x.first - xtb), 2) * (1/m));
     }
     
     cout << "x trung binh: " << xtb << endl;
