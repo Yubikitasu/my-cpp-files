@@ -2,7 +2,6 @@
 
 using namespace std;
 
-
 int main() {
     vector<pair<float, float>> v;
     int n;
