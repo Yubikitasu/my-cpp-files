@@ -11,7 +11,7 @@ int main() {
     cin >> n;
     for (int i = 0; i < n; i++) {
         float a, x, y, b; cin >> x >> y >> b;
-        a = (x+y)/2;
+        a = (x + y) / 2;
         m += b;
         v.push_back({a, b});
     }
